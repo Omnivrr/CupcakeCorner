@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		195A102429FE8BED0034C60C /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195A102329FE8BED0034C60C /* AddressView.swift */; };
+		195A102629FE9B470034C60C /* CheckoutViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195A102529FE9B470034C60C /* CheckoutViews.swift */; };
 		19C4A67429FC09AD00B6E0FE /* CupCakeCornerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C4A67329FC09AD00B6E0FE /* CupCakeCornerApp.swift */; };
 		19C4A67629FC09AD00B6E0FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C4A67529FC09AD00B6E0FE /* ContentView.swift */; };
 		19C4A67829FC09AF00B6E0FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19C4A67729FC09AF00B6E0FE /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		195A102329FE8BED0034C60C /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		195A102529FE9B470034C60C /* CheckoutViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViews.swift; sourceTree = "<group>"; };
 		19C4A67029FC09AD00B6E0FE /* CupCakeCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupCakeCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19C4A67329FC09AD00B6E0FE /* CupCakeCornerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupCakeCornerApp.swift; sourceTree = "<group>"; };
 		19C4A67529FC09AD00B6E0FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			children = (
 				19C4A67329FC09AD00B6E0FE /* CupCakeCornerApp.swift */,
 				19C4A67529FC09AD00B6E0FE /* ContentView.swift */,
+				195A102529FE9B470034C60C /* CheckoutViews.swift */,
 				19C4A67729FC09AF00B6E0FE /* Assets.xcassets */,
 				19C4A67929FC09AF00B6E0FE /* Preview Content */,
 			);
@@ -147,6 +150,7 @@
 				195A102429FE8BED0034C60C /* AddressView.swift in Sources */,
 				19C4A67629FC09AD00B6E0FE /* ContentView.swift in Sources */,
 				19C4A67429FC09AD00B6E0FE /* CupCakeCornerApp.swift in Sources */,
+				195A102629FE9B470034C60C /* CheckoutViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
