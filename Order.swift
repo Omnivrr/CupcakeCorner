@@ -8,10 +8,15 @@
 import SwiftUI
 
 class Order: ObservableObject, Codable {
+    // Define the keys for encoding and decoding
     enum CodingKeys: CodingKey {
         case type, quantity, extraFrosting, addSprinkles, name, streetAddress, city, zip
     }
+    
+    // List of available cupcake types
     static let types = ["Vanilla", "Strawberry", "Chocolate", "Rainbow"]
+    
+    // Properties for the cupcake order
     @Published var type = 0
     @Published var quantity = 3
     
@@ -32,6 +37,7 @@ class Order: ObservableObject, Codable {
     @Published var city = ""
     @Published var zip = ""
     
+    // Check if the address is valid
     var hasValidAddress: Bool {
         if name.isEmpty || streetAddress.isEmpty || city.isEmpty {
             return false
@@ -39,27 +45,32 @@ class Order: ObservableObject, Codable {
         
         return true
     }
+    
+    // Calculate the cost of the cupcake order
     var cost: Double {
-        //$2 per cake
+        // Base cost of $2 per cake
         var cost = Double(quantity) * 2
         
-        // Complicated cake cost more
+        // Add additional cost for certain types of cakes
         cost += (Double(type) / 2)
         
-        // $1 per cake for extra frosting
+        // Add $1 per cake for extra frosting
         if extraFrosting {
             cost += Double(quantity)
         }
         
-        // $0.50/cake for sprinkles
+        // Add $0.50 per cake for sprinkles
         if addSprinkles {
             cost += Double(quantity) / 2
         }
         
         return cost
     }
+    
+    // Default initializer
     init() {}
     
+    // Encoding
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         
@@ -74,9 +85,9 @@ class Order: ObservableObject, Codable {
         try container.encode(extraFrosting, forKey: .extraFrosting)
         try container.encode(addSprinkles, forKey: .city)
         try container.encode(addSprinkles, forKey: .zip)
-        
-        
     }
+    
+    // Decoding
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
@@ -90,8 +101,5 @@ class Order: ObservableObject, Codable {
         streetAddress = try container.decode(String.self, forKey: .streetAddress)
         city = try container.decode(String.self, forKey: .city)
         zip = try container.decode(String.self, forKey: .zip)
-        
-        
-        
-}
+    }
 }
