@@ -33,7 +33,7 @@ struct ContentView: View {
                     NavigationLink {
                         AddressView(order: order)
                     } label: {
-                        Text("Delivery dteails")
+                        Text("Delivery details")
                     }
                 }
             }
