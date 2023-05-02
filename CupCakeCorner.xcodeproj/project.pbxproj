@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		195A102429FE8BED0034C60C /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195A102329FE8BED0034C60C /* AddressView.swift */; };
 		195A102629FE9B470034C60C /* CheckoutViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195A102529FE9B470034C60C /* CheckoutViews.swift */; };
+		195A102C2A00088E0034C60C /* launchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195A102B2A00088E0034C60C /* launchScreen.swift */; };
+		1968FFD12A00226A0040F0FC /* storeItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1968FFD02A00226A0040F0FC /* storeItems.swift */; };
+		1968FFD32A0031DA0040F0FC /* storeHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1968FFD22A0031DA0040F0FC /* storeHome.swift */; };
+		1994CB5F2A003B7C0062CDBE /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1994CB5E2A003B7C0062CDBE /* Stock.swift */; };
+		1994CB612A0054280062CDBE /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1994CB602A0054280062CDBE /* Cart.swift */; };
 		19C4A67429FC09AD00B6E0FE /* CupCakeCornerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C4A67329FC09AD00B6E0FE /* CupCakeCornerApp.swift */; };
 		19C4A67629FC09AD00B6E0FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C4A67529FC09AD00B6E0FE /* ContentView.swift */; };
 		19C4A67829FC09AF00B6E0FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19C4A67729FC09AF00B6E0FE /* Assets.xcassets */; };
@@ -19,6 +24,11 @@
 /* Begin PBXFileReference section */
 		195A102329FE8BED0034C60C /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 		195A102529FE9B470034C60C /* CheckoutViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViews.swift; sourceTree = "<group>"; };
+		195A102B2A00088E0034C60C /* launchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = launchScreen.swift; sourceTree = "<group>"; };
+		1968FFD02A00226A0040F0FC /* storeItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storeItems.swift; sourceTree = "<group>"; };
+		1968FFD22A0031DA0040F0FC /* storeHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storeHome.swift; sourceTree = "<group>"; };
+		1994CB5E2A003B7C0062CDBE /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		1994CB602A0054280062CDBE /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		19C4A67029FC09AD00B6E0FE /* CupCakeCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupCakeCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19C4A67329FC09AD00B6E0FE /* CupCakeCornerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupCakeCornerApp.swift; sourceTree = "<group>"; };
 		19C4A67529FC09AD00B6E0FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,9 +69,14 @@
 		19C4A67229FC09AD00B6E0FE /* CupCakeCorner */ = {
 			isa = PBXGroup;
 			children = (
+				195A102B2A00088E0034C60C /* launchScreen.swift */,
 				19C4A67329FC09AD00B6E0FE /* CupCakeCornerApp.swift */,
 				19C4A67529FC09AD00B6E0FE /* ContentView.swift */,
 				195A102529FE9B470034C60C /* CheckoutViews.swift */,
+				1994CB602A0054280062CDBE /* Cart.swift */,
+				1968FFD02A00226A0040F0FC /* storeItems.swift */,
+				1968FFD22A0031DA0040F0FC /* storeHome.swift */,
+				1994CB5E2A003B7C0062CDBE /* Stock.swift */,
 				19C4A67729FC09AF00B6E0FE /* Assets.xcassets */,
 				19C4A67929FC09AF00B6E0FE /* Preview Content */,
 			);
@@ -148,8 +163,13 @@
 			files = (
 				19CBCC0B29FE7EC900FCE219 /* Order.swift in Sources */,
 				195A102429FE8BED0034C60C /* AddressView.swift in Sources */,
+				1968FFD32A0031DA0040F0FC /* storeHome.swift in Sources */,
+				1968FFD12A00226A0040F0FC /* storeItems.swift in Sources */,
+				1994CB612A0054280062CDBE /* Cart.swift in Sources */,
+				195A102C2A00088E0034C60C /* launchScreen.swift in Sources */,
 				19C4A67629FC09AD00B6E0FE /* ContentView.swift in Sources */,
 				19C4A67429FC09AD00B6E0FE /* CupCakeCornerApp.swift in Sources */,
+				1994CB5F2A003B7C0062CDBE /* Stock.swift in Sources */,
 				195A102629FE9B470034C60C /* CheckoutViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
